@@ -1,18 +1,21 @@
-# Nome do projeto
+# LibraLearn
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+O objetivo deste projeto é desenvolver estratégias eficazes para promover uma maior aceitação e adoção da Língua Brasileira de Sinais. Além disso, o projeto visa criar recursos educacionais acessíveis e atrativos para facilitar o aprendizado de Libras entre pessoas de todas as idades e origens.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Caio Victor Kodato Teixeira
+* Gustavo Felippe Barbosa
+* João Vítor Kindlé Carone Murta
+* Lucas Cordeiro Antunes Viana
+* Paulo Bernardes Quintino Surette
+* Pedro Queiroz Rolim
+* Pedro Soares de Souza Garcia
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Diego Augusto de Faria Barros
+* Luiz Henrique da Costa Silva
 
 ## Instruções de utilização
 
