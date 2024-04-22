@@ -20,112 +20,67 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-**Links Úteis**:
-
-- [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-- [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-- [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A Língua Brasileira de Sinais (Libras) é reconhecida como um meio de comunicação fundamental para a inclusão de pessoas surdas na sociedade. No entanto, apesar dos esforços de conscientização e promoção, há um padrão preocupante de desinteresse entre muitas pessoas em aprender Libras. 
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
-
-**Links Úteis**:
-
-- [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo deste projeto é investigar as causas do desinteresse em aprender Libras e desenvolver estratégias eficazes para promover uma maior aceitação e adoção da língua. Além disso, o projeto visa criar recursos educacionais acessíveis e atrativos para facilitar o aprendizado de Libras entre pessoas de todas as idades e origens.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-**Links Úteis**:
-
-- [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A promoção da aprendizagem de Libras é crucial para garantir a inclusão e a igualdade de oportunidades para pessoas surdas. Ao superar o desinteresse em aprender Libras, podemos criar uma sociedade mais inclusiva e acolhedora, onde todos têm a oportunidade de se comunicar de forma eficaz e participar plenamente da vida em comunidade.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
-
-**Links Úteis**:
-
-- [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-- [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+O público-alvo deste projeto inclui educadores, estudantes, profissionais de saúde, líderes comunitários e o público em geral interessado em promover a inclusão de pessoas surdas. Além disso, o projeto visa alcançar pessoas que atualmente não têm interesse em aprender Libras, mas que podem se beneficiar com uma maior compreensão e aceitação da língua.
 
 ## Personas
+![G3 - Libras - Entendimento 5](https://github.com/pssgarcia/libra-learn/assets/159476293/d77f17c5-9aea-46ad-9669-e734d3fb4219)
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+![G3 - Libras - Entendimento 4](https://github.com/pssgarcia/libra-learn/assets/159476293/5782055d-8748-48d2-bffb-fbdb0e231bd0)
 
-**Links Úteis**:
-
-- [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-- [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-- [Rock Content](https://rockcontent.com/blog/personas/)
-- [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+![G3 - Libras - Entendimento 3](https://github.com/pssgarcia/libra-learn/assets/159476293/d407d164-7683-4cf5-952f-941b9ffc3bc5)
 
 ## Histórias de Usuários
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-**Links Úteis**:
-
-- [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-- [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+| **EU, COMO...**          | **DESEJO...**                                                                                                   | **PARA QUE...**                                                                                                      |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **Usuário**              | Ter acesso a informações sobre a importância e o funcionamento da língua de sinais no Brasil                     | Aumentar minha conscientização e compreensão sobre o assunto.                                                       |
+| **Usuário**              | Ter acesso a cursos interativos que me guiem passo a passo no aprendizado da língua                              | Possa praticar e melhorar minhas habilidades de comunicação.                                                        |
+| **Usuário**              | Ter acesso a jogos educativos que me permitam praticar e reforçar meu conhecimento em Libras de forma divertida  | Tornar o processo de aprendizado mais agradável e eficaz.                                                            |
+| **Proprietário**         | Implementar um sistema de feedback dos usuários                                                                  | Coletar opiniões, sugestões e críticas construtivas que possam orientar o aprimoramento contínuo da plataforma.    |
+| **Proprietário**         | Garantir a segurança e privacidade dos dados dos usuários                                                        | Garantir a confiança e a credibilidade da plataforma.                                                                 |
+                                                                                                                                                                                                                                               
 
 ## Requisitos
 
-Os requisitos de um projeto são classificados em dois grupos:
+| **Requisitos Funcionais** | **Descrição**                                                                                                        |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------|
+| RF-1                      | O sistema deve ter uma página inicial com uma introdução sobre Libras e sua importância.                            |
+| RF-2                      | O sistema deve permitir que os usuários se cadastrem na plataforma, fornecendo informações básicas como nome, e-mail e senha. |
+| RF-3                      | O sistema deve oferecer uma variedade de cursos de diferentes níveis de dificuldade e áreas de interesse, incluindo cursos introdutórios, intermediários e avançados. |
 
-- [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
-  correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
+| **Requisitos Não Funcionais (RNF)** | **Descrição**                                                                                       |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------|
+| RNF-1                               | A aplicação deve ser responsiva.                                                                   |
+| RNF-2                               | Aplicação deve trazer uma interface acessível e intuitiva.                                         |
+| RNF-3                               | Aplicação deve processar rapidamente as informações.                                                |
+| RNF-4                               | O site deve ser seguro.                                                                             |
 
-Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
-**Links Úteis**:
-
-- [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-- [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## User Flow
-
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-**Links Úteis**:
-
-- [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-- [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-- [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+![Fluxo do usuário](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/1331f0e5-5474-4006-99d3-d7fc0ddbcf8f)
 
 ## Wireframes
-
-Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
-
-**Links Úteis**:
-
-- [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-- [Figma](https://www.figma.com/)
-- [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-- [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+![G3 - Libras - Entendimento 5](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/75d5b54f-274a-4621-942c-a3691f5645a1)
+![G3 - Libras - Entendimento 4](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/cdff7d27-8a57-4296-83d0-a762c7b7e483)
+![G3 - Libras - Entendimento 3](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/bf870ec6-d69e-478a-9582-9e58817fdfb4)
 
 ## Gestão de Projetos
+O projeto é realizado por meio da metodologia ágil SCRUM, que organiza o trabalho em iterações de curto prazo, nomeadas SPRINTS. Essas sprints eram debatidas em chamadas no discord e no whatsapp, com o objetivo de um entendimento geral de todo o time envolvido para que seja entregue uma sprint qualificada.
 
- Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
-
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
-
-**Links Úteis**:
-
-- [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-- [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-- [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-- [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-- [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+ | AMBIENTE                 | PLATAFORMA            |
+|--------------------------|-----------------------|
+| Repositório de código    | GitHub                |
+| Gerenciamento do projeto | Discord / Whatsapp    |
+| Templates                | Miro                  |
