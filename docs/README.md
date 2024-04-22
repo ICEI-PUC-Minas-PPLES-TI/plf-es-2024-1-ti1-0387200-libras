@@ -72,9 +72,11 @@ O público-alvo deste projeto inclui educadores, estudantes, profissionais de sa
 ![Fluxo do usuário](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/1331f0e5-5474-4006-99d3-d7fc0ddbcf8f)
 
 ## Wireframes
-![G3 - Libras - Entendimento 5](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/75d5b54f-274a-4621-942c-a3691f5645a1)
-![G3 - Libras - Entendimento 4](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/cdff7d27-8a57-4296-83d0-a762c7b7e483)
-![G3 - Libras - Entendimento 3](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/bf870ec6-d69e-478a-9582-9e58817fdfb4)
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/6074f71f-e581-495f-85af-531dcf0975a9)
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/66a22b05-ed96-481f-aa4f-77776ef26adc)
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/d9e42386-f2ce-41d6-bb50-7b27db99009d)
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/2db222b4-b737-4091-b258-7ba50cfb889d)
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras/assets/159476293/921b8d9b-0a21-4e73-a61d-ffae5f9f59a1)
 
 ## Gestão de Projetos
 O projeto é realizado por meio da metodologia ágil SCRUM, que organiza o trabalho em iterações de curto prazo, nomeadas SPRINTS. Essas sprints eram debatidas em chamadas no discord e no whatsapp, com o objetivo de um entendimento geral de todo o time envolvido para que seja entregue uma sprint qualificada.
