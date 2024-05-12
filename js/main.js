@@ -8,7 +8,7 @@ form.addEventListener("submit", (event) => {
   let nivel = document.getElementById("nivel").value;
   let professor = document.getElementById("professor").value;
   let experiencia = document.getElementById("experiencia").value;
-  let certificado = document.getElementById("certificado").value;
+  let certificado = document.getElementById("certificado").checked;
   let descricao = document.getElementById("descricao").value;
 
   function gerarIdUnico() {
@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
     titulo: titulo,
     duracao: duracao,
     nivel: nivel,
-    professsor: {
+    professor: { 
       nome: professor,
       experiencia: experiencia,
     },
