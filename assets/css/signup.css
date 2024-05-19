@@ -66,6 +66,103 @@ body {
   margin-bottom: 5%;
 }
 
+.gender-title {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #0d009c;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  color: #0d009c;
+}
+
+.gender-group {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.gender-input {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  display: flex; 
+  align-items: center; 
+  font-size: 14px;
+  color: black;
+}
+
+
+.gender-input input[type="radio"] {
+  margin-right: 10px; 
+}
+
+.nivel-title {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #0d009c;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  color: #0d009c;
+}
+
+.nivel-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+
+.nivel-input {
+  margin-right: 20px;
+  margin-bottom: 0px;
+  display: flex; 
+  align-items: center;
+  font-size: 14px;
+  color: black;
+}
+
+#dataNascimento {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #0d009c;
+  border-radius: 4px;
+}
+
+#labelDataNascimento {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #0d009c;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+}
+
+
+.nivel-input input[type="radio"] {
+  margin-right: 10px;
+}
+
 .label-float input:focus{
   border-bottom: 2px solid #4038a0;
 }
