@@ -123,7 +123,7 @@ function cadastrar(){
     msgErro.setAttribute('style', 'display: none')
     msgErro.innerHTML = ''
     setTimeout(() => {
-      window.location.href = '/assets/pages/signin.html';
+      window.location.href = '../pages/signin.html';
   }, 3000);
     
   } else {
