@@ -41,7 +41,7 @@ function entrar(){
   })
    
   if(usuario.value == userValid.user && senha.value == userValid.senha){
-    window.location.href = '../../index.html'
+    window.location.href = '../pages/perfil.html'
  
     localStorage.setItem('userLogado', JSON.stringify(userValid))
   } else {

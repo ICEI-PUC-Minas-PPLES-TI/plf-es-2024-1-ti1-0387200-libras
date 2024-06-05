@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/perfil.css" />
+  <title>Perfil do Usuário</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo-title-container">
+        <img src="../images/logo.png" alt="Logo da LibraLearn" class="logo">
+        <h1 class="titulo">Perfil do Usuário</h1>
+      </div>
+
+      <div id="userData">
+        <div>
+          <label for="nomeCompleto">Nome Completo:</label>
+          <span id="nomeCompleto"></span>
+        </div>
+        <div>
+          <label for="userName">Nome de Usuário:</label>
+          <span id="userName"></span>
+        </div>
+        <div>
+          <label for="genero">Gênero:</label>
+          <span id="genero"></span>
+        </div>
+        <div>
+          <label for="dataNascimento">Data de Nascimento:</label>
+          <span id="dataNascimento"></span>
+        </div>
+        <div>
+          <label for="nivelConhecimento">Nível de Conhecimento:</label>
+          <span id="nivelConhecimento"></span>
+        </div>
+      </div>
+
+      <div class="justify-center">
+        <button onclick="editarPerfil()">Editar Perfil</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/perfil.js"></script>
+</body>
+
+</html>
