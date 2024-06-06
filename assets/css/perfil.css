@@ -1,41 +1,66 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
-    width: 90%;
-  }
-  
-  .titulo {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  #perfil-info {
-    margin-top: 20px;
-  }
-  
-  #perfil-info > div {
-    margin-bottom: 10px;
-  }
-  
-  #perfil-info strong {
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #ffffff80;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px; /* Aumenta a largura máxima do card */
+  width: 90%;
+}
+
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: nowrap; /* Garante que o conteúdo não quebre a linha */
+}
+
+.logo {
+  width: 80px; /* Mantém a logo um pouco maior */
+  margin-right: 10px; /* Ajusta o espaço entre a logo e o título */
+}
+
+.titulo {
+  margin: 0;
+  font-size: 1.2em; /* Reduz o tamanho da fonte do título */
+  white-space: nowrap; /* Garante que o título não quebre a linha */
+}
+
+#perfil-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#perfil-info > div {
+  flex: 1 1 45%; /* Controla o espaço ocupado pelos elementos */
+  margin-bottom: 10px;
+}
+
+#perfil-info strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#perfil-info p {
+  color: #0d009c;
+}
+
+h1 span {
+  color: #0d009c;
+}

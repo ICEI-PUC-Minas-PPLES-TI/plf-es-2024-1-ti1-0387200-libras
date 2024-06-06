@@ -5,9 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Perfil do Usuário - LibraLearn</title>
   <link rel="stylesheet" href="../css/perfil.css" />
-  <title>Perfil do Usuário</title>
 </head>
 
 <body>
@@ -15,38 +14,35 @@
     <div class="card">
       <div class="logo-title-container">
         <img src="../images/logo.png" alt="Logo da LibraLearn" class="logo">
-        <h1 class="titulo">Perfil do Usuário</h1>
+        <h1 class="titulo" id="tituloUsuario">Seja bem-vindo ao seu perfil, <span id="userName"></span></h1>
       </div>
-
-      <div id="userData">
+      <div id="perfil-info">
         <div>
-          <label for="nomeCompleto">Nome Completo:</label>
-          <span id="nomeCompleto"></span>
+          <strong>Nome Completo:</strong>
+          <p id="nome"></p>
         </div>
         <div>
-          <label for="userName">Nome de Usuário:</label>
-          <span id="userName"></span>
+          <strong>Nome de Usuário:</strong>
+          <p id="usuario"></p>
         </div>
         <div>
-          <label for="genero">Gênero:</label>
-          <span id="genero"></span>
+          <strong>Data de Nascimento:</strong>
+          <p id="dataNascimento"></p>
         </div>
         <div>
-          <label for="dataNascimento">Data de Nascimento:</label>
-          <span id="dataNascimento"></span>
+          <strong>Nível de Conhecimento:</strong>
+          <p id="nivel"></p>
         </div>
         <div>
-          <label for="nivelConhecimento">Nível de Conhecimento:</label>
-          <span id="nivelConhecimento"></span>
+          <strong>Gênero:</strong>
+          <p id="genero"></p>
         </div>
-      </div>
-
-      <div class="justify-center">
-        <button onclick="editarPerfil()">Editar Perfil</button>
+        <!-- Botão para editar a senha -->
+        <button onclick="editarUsuario()">Editar Usuário</button>
+        <button onclick="editarSenha()">Editar Senha</button>
       </div>
     </div>
   </div>
-
   <script src="../js/perfil.js"></script>
 </body>
 
