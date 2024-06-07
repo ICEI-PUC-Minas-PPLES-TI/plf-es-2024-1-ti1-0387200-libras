@@ -1,59 +1,100 @@
 document.addEventListener('DOMContentLoaded', () => {
+  let userLogado = JSON.parse(localStorage.getItem('userLogado'));
 
-  const usuarioLogado = JSON.parse(localStorage.getItem('userLogado'));
-  
-  if (usuarioLogado) {
-    document.getElementById('userName').textContent = usuarioLogado.userCad;
-    document.getElementById('nome').textContent = usuarioLogado.nomeCad;
-    document.getElementById('usuario').textContent = usuarioLogado.userCad;
-    document.getElementById('dataNascimento').textContent = usuarioLogado.dataNascimentoCad;
-    document.getElementById('nivel').textContent = usuarioLogado.nivelCad;
-    document.getElementById('genero').textContent = usuarioLogado.generoCad;
+  if (userLogado) {
+    document.getElementById('userName').textContent = userLogado.user;
+    document.getElementById('nome').textContent = userLogado.nome;
+    document.getElementById('usuario').textContent = userLogado.user;
+    document.getElementById('dataNascimento').textContent = userLogado.dataNascimento; 
+    document.getElementById('nivel').textContent = userLogado.nivel; 
+    document.getElementById('genero').textContent = userLogado.genero; 
   } else {
-    // Se não houver usuário logado, redirecionar para a página de login
+    
     window.location.href = 'signin.html';
   }
-
-
 });
 
 function editarUsuario() {
-  
-  const usuarioLogado = JSON.parse(localStorage.getItem('usuarios'));
-  
+  let userLogado = JSON.parse(localStorage.getItem('userLogado'));
+
   const novoUsuario = prompt('Digite seu novo nome de usuário:');
   
   if (novoUsuario) {
-      
-      usuarioLogado.userCad = novoUsuario;
-      localStorage.setItem('usuarios', JSON.stringify(usuarioLogado));
-      
-      document.getElementById('usuario').textContent = novoUsuario;
-      document.getElementById('userName').textContent = novoUsuario;
+    // Atualiza o nome de usuário no objeto do usuário logado
+    userLogado.user = novoUsuario;
 
-      alert('Nome de usuário atualizado com sucesso!');
+    // Atualiza o usuário logado no localStorage
+    localStorage.setItem('userLogado', JSON.stringify(userLogado));
+    
+    // Atualiza a lista de usuários no localStorage
+    let listaUser = JSON.parse(localStorage.getItem('usuarios')) || [];
+    listaUser = listaUser.map(user => user.id === userLogado.id ? userLogado : user);
+    localStorage.setItem('usuarios', JSON.stringify(listaUser));
+    
+    // Atualiza a interface de usuário
+    document.getElementById('usuario').textContent = novoUsuario;
+    document.getElementById('userName').textContent = novoUsuario;
+
+    alert('Nome de usuário atualizado com sucesso!');
   } else {
-      alert('Nome de usuário não alterado.');
+    alert('Nome de usuário não alterado.');
   }
 }
 
 function editarSenha() {
-  // Recupere a senha atual do usuário logado
-  const usuarioLogado = JSON.parse(localStorage.getItem('userLogado'));
-  const senhaAtual = usuarioLogado.senha;
+  let userLogado = JSON.parse(localStorage.getItem('userLogado'));
 
-  // Solicite ao usuário que insira a nova senha
   const novaSenha = prompt('Digite sua nova senha:');
 
-  // Verifique se a nova senha não está vazia e se é diferente da senha atual
-  if (novaSenha && novaSenha !== senhaAtual) {
-    // Atualize a senha no localStorage
-    usuarioLogado.senha = novaSenha;
-    localStorage.setItem('userLogado', JSON.stringify(usuarioLogado));
+  if (novaSenha && novaSenha !== userLogado.senha) {
+    
+    userLogado.senha = novaSenha;
+
+    localStorage.setItem('userLogado', JSON.stringify(userLogado));
+
+    let listaUser = JSON.parse(localStorage.getItem('usuarios')) || [];
+    listaUser = listaUser.map(user => user.id === userLogado.id ? userLogado : user);
+    localStorage.setItem('usuarios', JSON.stringify(listaUser));
+
     alert('Senha atualizada com sucesso!');
-  } else if (novaSenha === senhaAtual) {
+  } else if (novaSenha === userLogado.senha) {
     alert('A nova senha não pode ser igual à senha atual.');
   } else {
     alert('Senha não alterada.');
+  }
+}
+
+function editarNivel() {
+  let userLogado = JSON.parse(localStorage.getItem('userLogado'));
+
+  const niveisValidos = ['Avançado', 'Intermediário', 'Iniciante'];
+  let novoNivel = prompt('Digite seu novo nível de conhecimento (Avançado, Intermediário, Iniciante):');
+
+  if (novoNivel) {
+    novoNivel = novoNivel.charAt(0).toUpperCase() + novoNivel.slice(1).toLowerCase();
+
+    if (!niveisValidos.includes(novoNivel)) {
+      alert('Nível inválido. Por favor, insira Avançado, Intermediário ou Iniciante.');
+    } else if (novoNivel === userLogado.nivel) {
+      alert('Você já possui esse nível.');
+    } else {
+      // Atualiza o nível de conhecimento no objeto do usuário logado
+      userLogado.nivel = novoNivel;
+
+      // Atualiza o usuário logado no localStorage
+      localStorage.setItem('userLogado', JSON.stringify(userLogado));
+
+      // Atualiza a lista de usuários no localStorage
+      let listaUser = JSON.parse(localStorage.getItem('usuarios')) || [];
+      listaUser = listaUser.map(user => user.id === userLogado.id ? userLogado : user);
+      localStorage.setItem('usuarios', JSON.stringify(listaUser));
+
+      // Atualiza a interface de usuário
+      document.getElementById('nivel').textContent = novoNivel;
+
+      alert('Nível de conhecimento atualizado com sucesso!');
+    }
+  } else {
+    alert('Nível de conhecimento não alterado.');
   }
 }

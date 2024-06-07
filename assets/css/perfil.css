@@ -64,3 +64,32 @@ body {
 h1 span {
   color: #0d009c;
 }
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between; /* Espaça os botões igualmente */
+  gap: 10px; /* Adiciona espaço entre os botões */
+  margin-top: 20px; /* Adiciona um espaçamento superior */
+}
+
+button {
+  flex: 1; /* Permite que os botões ocupem o mesmo espaço */
+  padding: 8px 12px; /* Ajusta o tamanho do padding para tornar os botões menores */
+  background-color: #ffffff80; /* Define a cor de fundo para corresponder à cor do body */
+  color: #fff; /* Define a cor do texto para branco */
+  border: 1px solid #0d47a1; /* Adiciona uma borda sólida com cor azul escuro */
+  border-radius: 4px; /* Define o raio da borda */
+  cursor: pointer;
+  margin-right: 5px; /* Adiciona um espaço à direita de cada botão */
+  color: black;
+  height: 60px;
+  font-size: 12px;
+}
+
+button:last-child {
+  margin-right: 0; /* Remove o espaço à direita do último botão */
+}
+
+button:hover {
+  background-color: #90caf9; /* Altera a cor de fundo ao passar o mouse */
+}
