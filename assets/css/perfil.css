@@ -17,7 +17,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 500px; /* Aumenta a largura máxima do card */
+  max-width: 500px; 
   width: 90%;
 }
 
@@ -26,18 +26,18 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  flex-wrap: nowrap; /* Garante que o conteúdo não quebre a linha */
+  flex-wrap: nowrap; 
 }
 
 .logo {
-  width: 80px; /* Mantém a logo um pouco maior */
-  margin-right: 10px; /* Ajusta o espaço entre a logo e o título */
+  width: 80px; 
+  margin-right: 10px; 
 }
 
 .titulo {
   margin: 0;
-  font-size: 1.2em; /* Reduz o tamanho da fonte do título */
-  white-space: nowrap; /* Garante que o título não quebre a linha */
+  font-size: 1.2em; 
+  white-space: nowrap; 
 }
 
 #perfil-info {
@@ -48,7 +48,7 @@ body {
 }
 
 #perfil-info > div {
-  flex: 1 1 45%; /* Controla o espaço ocupado pelos elementos */
+  flex: 1 1 45%; 
   margin-bottom: 10px;
 }
 
@@ -67,29 +67,29 @@ h1 span {
 
 .buttons-container {
   display: flex;
-  justify-content: space-between; /* Espaça os botões igualmente */
-  gap: 10px; /* Adiciona espaço entre os botões */
-  margin-top: 20px; /* Adiciona um espaçamento superior */
+  justify-content: space-between; 
+  gap: 10px; 
+  margin-top: 20px; 
 }
 
 button {
-  flex: 1; /* Permite que os botões ocupem o mesmo espaço */
-  padding: 8px 12px; /* Ajusta o tamanho do padding para tornar os botões menores */
-  background-color: #ffffff80; /* Define a cor de fundo para corresponder à cor do body */
-  color: #fff; /* Define a cor do texto para branco */
-  border: 1px solid #0d47a1; /* Adiciona uma borda sólida com cor azul escuro */
-  border-radius: 4px; /* Define o raio da borda */
+  flex: 1; 
+  padding: 8px 12px; 
+  background-color: #ffffff80; 
+  color: #fff; 
+  border: 1px solid #0d47a1; 
+  border-radius: 4px; 
   cursor: pointer;
-  margin-right: 5px; /* Adiciona um espaço à direita de cada botão */
+  margin-right: 5px; 
   color: black;
   height: 60px;
   font-size: 12px;
 }
 
 button:last-child {
-  margin-right: 0; /* Remove o espaço à direita do último botão */
+  margin-right: 0; 
 }
 
 button:hover {
-  background-color: #90caf9; /* Altera a cor de fundo ao passar o mouse */
+  background-color: #90caf9; 
 }

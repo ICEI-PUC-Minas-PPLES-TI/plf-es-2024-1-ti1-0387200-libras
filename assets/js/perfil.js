@@ -5,12 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('userName').textContent = userLogado.user;
     document.getElementById('nome').textContent = userLogado.nome;
     document.getElementById('usuario').textContent = userLogado.user;
-    document.getElementById('dataNascimento').textContent = userLogado.dataNascimento; 
+
+    let dataNascimento = new Date(userLogado.dataNascimento);
+    let dataFormatada = dataNascimento.toLocaleDateString('pt-BR');
+    document.getElementById('dataNascimento').textContent = dataFormatada;
+
     document.getElementById('nivel').textContent = userLogado.nivel; 
     document.getElementById('genero').textContent = userLogado.genero; 
   } else {
     
-    window.location.href = 'signin.html';
+    window.location.href = '../pages/signin.html';
   }
 });
 
@@ -20,18 +24,18 @@ function editarUsuario() {
   const novoUsuario = prompt('Digite seu novo nome de usuário:');
   
   if (novoUsuario) {
-    // Atualiza o nome de usuário no objeto do usuário logado
+    
     userLogado.user = novoUsuario;
 
-    // Atualiza o usuário logado no localStorage
+    
     localStorage.setItem('userLogado', JSON.stringify(userLogado));
     
-    // Atualiza a lista de usuários no localStorage
+    
     let listaUser = JSON.parse(localStorage.getItem('usuarios')) || [];
     listaUser = listaUser.map(user => user.id === userLogado.id ? userLogado : user);
     localStorage.setItem('usuarios', JSON.stringify(listaUser));
     
-    // Atualiza a interface de usuário
+    
     document.getElementById('usuario').textContent = novoUsuario;
     document.getElementById('userName').textContent = novoUsuario;
 
@@ -78,18 +82,18 @@ function editarNivel() {
     } else if (novoNivel === userLogado.nivel) {
       alert('Você já possui esse nível.');
     } else {
-      // Atualiza o nível de conhecimento no objeto do usuário logado
+      
       userLogado.nivel = novoNivel;
 
-      // Atualiza o usuário logado no localStorage
+      
       localStorage.setItem('userLogado', JSON.stringify(userLogado));
 
-      // Atualiza a lista de usuários no localStorage
+      
       let listaUser = JSON.parse(localStorage.getItem('usuarios')) || [];
       listaUser = listaUser.map(user => user.id === userLogado.id ? userLogado : user);
       localStorage.setItem('usuarios', JSON.stringify(listaUser));
 
-      // Atualiza a interface de usuário
+      
       document.getElementById('nivel').textContent = novoNivel;
 
       alert('Nível de conhecimento atualizado com sucesso!');

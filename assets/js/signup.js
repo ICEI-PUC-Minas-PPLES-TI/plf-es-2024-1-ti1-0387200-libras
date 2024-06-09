@@ -129,6 +129,16 @@ function cadastrar() {
     msgSuccesso.innerHTML = '';
     msgSuccesso.setAttribute('style', 'display: none');
   }
+
+   
+   if (!obterGeneroSelecionado()) {
+    msgErro.innerHTML += '<br><strong>Selecione um gênero</strong>';
+  }
+  if (!obterNivelSelecionado()) {
+    msgErro.innerHTML += '<br><strong>Selecione um nível de conhecimento</strong>';
+  }
+
+ 
 }
 
 function obterGeneroSelecionado() {
