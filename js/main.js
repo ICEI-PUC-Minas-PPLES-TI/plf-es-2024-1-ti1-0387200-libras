@@ -74,7 +74,11 @@ form.addEventListener("submit", (event) => {
     titulo: titulo,
     duracao: duracao,
     nivel: nivel,
+<<<<<<< HEAD
     professor: {
+=======
+    professor: { 
+>>>>>>> c41f7ab613115188b88782dbc27f8bc094a55628
       nome: professor,
       experiencia: experiencia,
     },
