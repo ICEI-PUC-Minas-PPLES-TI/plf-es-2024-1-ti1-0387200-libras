@@ -9,7 +9,8 @@
       "nome": "Ana Silva",
       "experiencia": "5 anos de ensino de Libras"
     },
-    "certificado": false
+    "certificado": false,
+    "curtido": false
   },
   {
     "id": 2,
@@ -21,6 +22,7 @@
       "nome": "Roberto Moreira",
       "experiencia": "9 anos de ensino de Libras"
     },
-    "certificado": true
+    "certificado": true,
+    "curtido": false
   }
 ]
