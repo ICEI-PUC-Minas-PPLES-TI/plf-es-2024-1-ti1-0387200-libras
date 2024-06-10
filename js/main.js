@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cursos.length > 0) {
     exibirCursos(cursos);
   } else {
+
     fetch("/data/course.json")
       .then((response) => response.json())
       .then((data) => {
@@ -69,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       mensagemContainer.style.display = "none";
     }, 3000); 
-
+  }
   document.querySelectorAll(".like-btn").forEach((button) => {
     button.addEventListener("click", (event) => {
         exibirMensagem("Curso adicionado aos favoritos!");
