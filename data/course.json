@@ -3,12 +3,13 @@
     "id": 1,
     "titulo": "Curso de Libras Básico",
     "duracao": "6 semanas",
-    "descricao": "Um curso introdutório para aprender o alfabeto e frases básicas em Libras.",
+    "descricao": "Um curso introdutório para aprender o alfabeto e frases básicas na linguagem de Libras.",
     "nivel": "Intermediário",
     "professor": {
       "nome": "Ana Silva",
       "experiencia": "5 anos de ensino de Libras"
     },
+    "link": "http://www.sample.info/?sheet=lunch&battle=seed",
     "certificado": false,
     "curtido": false
   },
@@ -22,6 +23,7 @@
       "nome": "Roberto Moreira",
       "experiencia": "9 anos de ensino de Libras"
     },
+    "link": "https://www.sample.org/?brake=touch",
     "certificado": true,
     "curtido": false
   }

@@ -32,60 +32,11 @@
     </nav>
 
     <!-- Mensagem de favoritos -->
-    <div id="mensagemContainer" style="display: none; background-color: #dff0d8; color: #3c763d; padding: 10px; margin-bottom: 10px;"></div>
+    <div id="mensageContainer" style="display: none; background-color: #dff0d8; color: #3c763d; padding: 10px; margin-bottom: 10px;"></div>
 
     <div class="row justify-content-md-center gap-2 pt-3" id="cursosContainer">
       <!-- Cards dos cursos serão inseridos aqui -->
     </div>
-  
-    <!-- Modal para adicionar comentário -->
-    <!-- <div
-      class="modal fade"
-      id="comentarioModal"
-      tabindex="-1"
-      aria-labelledby="comentarioModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="comentarioModalLabel">
-              Adicionar Comentário
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <textarea
-              id="comentarioTexto"
-              class="form-control"
-              rows="3"
-            ></textarea>
-            <input type="hidden" id="cursoId" />
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Cancelar
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              id="salvarComentarioBtn"
-            >
-              Salvar Comentário
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- Form para adicionar novo curso -->
     <form class="row g-3 mx-auto col-md-6" id="cursoForm">
@@ -146,6 +97,16 @@
         </select>
       </div>
       <div class="col-md-12 form-group">
+        <label for="certificado" class="form-label">Link</label>
+        <input
+          type="text"
+          class="form-control"
+          id="link"
+          placeholder="Insira o link de acesso ao curso"
+          required
+        />
+      </div>
+      <div class="col-md-12 form-group">
         <label for="descricao" class="form-label">Descrição</label>
         <textarea
           name="descricao"
@@ -161,6 +122,7 @@
         <button type="submit" class="btn btn-primary">Postar Curso</button>
       </div>
     </form>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
