@@ -6,3 +6,14 @@
 body {
   padding: 3%;
 }
+
+.card-curso {
+  min-height: 51vh;
+}
+
+.postar-button {
+  position: fixed;
+  z-index: 1000;
+  left: 40px;
+  bottom: 40px;
+}

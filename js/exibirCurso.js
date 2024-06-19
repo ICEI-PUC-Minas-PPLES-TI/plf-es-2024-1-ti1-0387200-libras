@@ -31,15 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     exibirCursos(cursosFiltrados);
   });
-
   function exibirCursos(cursos) {
     cursosContainer.innerHTML = "";
     cursos.forEach((curso) => {
       const card = `
-        <div class="col-lg-4 mb-4 curso-item">
+        <div class="col-lg-3 col-sm-5 mb-4 mh-100 curso-item">
           <div class="card bg-primary bg-gradient border border-black">
-            <div class="card-body">
-              <h5 class="card-title">${curso.titulo}</h5>
+            <div class="d-flex flex-column justify-content-center card-body card-curso">
+              <h5 class="card-title text-center fs-4">${curso.titulo}</h5>
               <a href="${curso.link}" class="link-light">Acessar</a>
               <p class="card-text">Duração: ${curso.duracao}</p>
               <p class="card-text">Nível: ${curso.nivel}</p>
@@ -53,18 +52,19 @@ document.addEventListener("DOMContentLoaded", () => {
               <p class="card-text">${curso.descricao}</p>
               ${
                 curso.novo
-                  ? `<button class="btn btn-light btn-sm like-btn" data-curso-id="${
-                      curso.id
-                    }">
-                ${curso.curtido ? "Curtido" : "Curtir"}
-              </button>`
-                  : ""
-              }
-              ${
-                curso.novo
-                  ? `<button class="btn btn-danger btn-sm excluir-btn" data-curso-id="${curso.id}">
-                Excluir
-              </button>`
+                  ? `<div class="d-flex justify-content-between"> 
+                  <button class="btn btn-light btn-sm like-btn" data-curso-id="${
+                    curso.id
+                  }">
+                    ${curso.curtido ? "Curtido" : "Curtir"}
+                  </button>
+                  <button class="btn btn-danger btn-sm excluir-btn" data-curso-id="${
+                    curso.id
+                  }">
+                    Excluir
+                  </button>
+                </div>
+                `
                   : ""
               }
             </div>
@@ -129,3 +129,5 @@ export default function exibirMensagem(mensagem) {
     mensagemContainer.style.display = "none";
   }, 3000);
 }
+
+

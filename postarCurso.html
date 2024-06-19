@@ -15,10 +15,20 @@
   />
     <title>Postar Curso</title>
   </head>
+  <style>
+    a {
+      text-decoration: none;
+      position: fixed;
+      left: 40px;
+      top: 3px;
+      font-size: 40px;
+    }
+  </style>
   <body>
     <div id="mensagemContainer" style="display: none; background-color: #dff0d8; color: #3c763d; padding: 10px; margin-bottom: 10px;"></div>
+    <a class="text-decoration-none" href="/cursos.html"><i class="fa-solid fa-arrow-left"></i></a>
     <!-- Form para adicionar novo curso -->
-    <form class="row g-3 mx-auto col-md-6" id="cursoForm">
+    <form class="row g-3 py-4 mx-auto col-md-6" id="cursoForm">
       <h2>Postar novo curso</h2>
       <div class="col-md-6 form-group">
         <label for="titulo" class="form-label">Título</label>

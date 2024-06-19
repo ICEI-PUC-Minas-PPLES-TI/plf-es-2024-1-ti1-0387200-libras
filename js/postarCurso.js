@@ -1,8 +1,8 @@
-import exibirMensagem from "./exibirCurso.js";
+import exibirMensagem from "./exibirCurso";
 
 let cursos = JSON.parse(localStorage.getItem("cursos")) || [];
-
 const form = document.querySelector("#cursoForm");
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -37,9 +37,7 @@ form.addEventListener("submit", (event) => {
 
   cursos.push(novoCurso);
   localStorage.setItem("cursos", JSON.stringify(cursos));
-
-  exibirMensagem("Curso adicionado com sucesso!");
-  // exibirCursos(cursos); // Atualizar a exibição dos cursos
+  exibirMensagem("Curso adicionado com sucesso");
   form.reset();
   window.location.href = "cursos.html";
 });
