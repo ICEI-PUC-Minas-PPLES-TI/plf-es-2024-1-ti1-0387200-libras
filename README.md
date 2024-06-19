@@ -5,10 +5,6 @@ O objetivo deste projeto é desenvolver estratégias eficazes para promover uma 
 ## Alunos integrantes da equipe
 
 * Caio Victor Kodato Teixeira
-* Gustavo Felippe Barbosa
-* João Vítor Kindlé Carone Murta
-* Lucas Cordeiro Antunes Viana
-* Paulo Bernardes Quintino Surette
 * Pedro Queiroz Rolim
 * Pedro Soares de Souza Garcia
 
