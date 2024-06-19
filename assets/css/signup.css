@@ -183,6 +183,23 @@ body {
   color: #4038a0
 }
 
+p{
+  color: #272262;
+  font-size: 14pt;
+  text-align: center;
+  margin-top: 10px;
+}
+a{
+  color: #7a3077;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+a:hover{
+  color: #272262;
+}
+
 button{
   background-color: transparent;
   border-color: #0d009c;
