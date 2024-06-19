@@ -17,115 +17,31 @@
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
-    <nav class="navbar justify-content-md-center">
-      <form class="d-flex col-md-8 column-gap-3">
+    <h1 class="text-center">Cursos de Libras</h1>
+    <nav class="navbar justify-content-md-center w-100">
+      <form class="d-flex col-md-6 column-gap-3 w-75">
         <input
           class="form-control mr-sm-0 input-busca"
           type="search"
           placeholder="Buscar curso"
           aria-label="Search"
         />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="button">
+        <button class="btn btn-outline-success my-1 my-sm-0" type="button">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
     </nav>
 
     <!-- Mensagem de favoritos -->
-    <div id="mensageContainer" style="display: none; background-color: #dff0d8; color: #3c763d; padding: 10px; margin-bottom: 10px;"></div>
+    <div id="mensagemContainer" style="display: none; background-color: #dff0d8; color: #3c763d; padding: 10px; margin-bottom: 10px;"></div>
 
     <div class="row justify-content-md-center gap-2 pt-3" id="cursosContainer">
       <!-- Cards dos cursos serão inseridos aqui -->
     </div>
-
-    <!-- Form para adicionar novo curso -->
-    <form class="row g-3 mx-auto col-md-6" id="cursoForm">
-      <h2>Postar novo curso</h2>
-      <div class="col-md-6 form-group">
-        <label for="titulo" class="form-label">Título</label>
-        <input
-          type="text"
-          class="form-control"
-          id="titulo"
-          placeholder="Título do curso"
-          required
-        />
-      </div>
-      <div class="col-md-6 form-group">
-        <label for="duracao" class="form-label">Duração</label>
-        <input
-          type="text"
-          class="form-control"
-          id="duracao"
-          placeholder="Duração do curso"
-          required
-        />
-      </div>
-      <div class="col-12 form-group">
-        <label for="nivel" class="form-label">Nível</label>
-        <select id="nivel" class="form-select" required>
-          <option value="Iniciante">Iniciante</option>
-          <option value="Intermediário">Intermediário</option>
-          <option value="Avançado">Avançado</option>
-        </select>
-      </div>
-      <div class="col-12 form-group">
-        <label for="professor" class="form-label">Professor</label>
-        <input
-          type="text"
-          class="form-control"
-          id="professor"
-          placeholder="Professor do curso"
-          required
-        />
-      </div>
-      <div class="col-md-6 form-group">
-        <label for="experiencia" class="form-label">Experiencia</label>
-        <input
-          type="text"
-          class="form-control"
-          id="experiencia"
-          placeholder="Tempo de experiência do professor"
-          required
-        />
-      </div>
-      <div class="col-md-6 form-group">
-        <label for="certificado" class="form-label">Possui certificado?</label>
-        <select id="certificado" class="form-select" required>
-          <option value="true">Sim</option>
-          <option value="false">Não</option>
-        </select>
-      </div>
-      <div class="col-md-12 form-group">
-        <label for="certificado" class="form-label">Link</label>
-        <input
-          type="text"
-          class="form-control"
-          id="link"
-          placeholder="Insira o link de acesso ao curso"
-          required
-        />
-      </div>
-      <div class="col-md-12 form-group">
-        <label for="descricao" class="form-label">Descrição</label>
-        <textarea
-          name="descricao"
-          class="form-control"
-          rows="5"
-          style="resize: none"
-          id="descricao"
-          placeholder="Digite a descrição do curso"
-          required
-        ></textarea>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Postar Curso</button>
-      </div>
-    </form>
-
+    <a href="/postarCurso.html">Postar</a>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/exibirCurso.js"></script>
   </body>
 </html>

@@ -86,7 +86,9 @@ document.addEventListener("DOMContentLoaded", () => {
           // Atualizar o armazenamento local
           localStorage.setItem("cursos", JSON.stringify(cursos));
           // Atualizar o texto do botão
-          event.target.textContent = cursos[cursoIndex].curtido ? "Curtido" : "Curtir";
+          event.target.textContent = cursos[cursoIndex].curtido
+            ? "Curtido"
+            : "Curtir";
           exibirMensagem("Status de curtida alterado!");
         }
       });
@@ -117,54 +119,13 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("ID do curso inválido");
     }
   }
-
-  function exibirMensagem(mensagem) {
-    mensagemContainer.innerText = mensagem;
-    mensagemContainer.style.display = "block";
-    // Esconder a mensagem após alguns segundos
-    setTimeout(() => {
-      mensagemContainer.style.display = "none";
-    }, 3000);
-  }
-
-  const form = document.querySelector("#cursoForm");
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    let titulo = document.getElementById("titulo").value;
-    let duracao = document.getElementById("duracao").value;
-    let nivel = document.getElementById("nivel").value;
-    let professor = document.getElementById("professor").value;
-    let experiencia = document.getElementById("experiencia").value;
-    let certificado = document.getElementById("certificado").value === "true";
-    let link = document.getElementById("link").value;
-    let descricao = document.getElementById("descricao").value;
-
-    function gerarIdUnico() {
-      return "_" + Math.random().toString(36).substr(2, 9);
-    }
-
-    let novoCurso = {
-      id: gerarIdUnico(),
-      titulo: titulo,
-      duracao: duracao,
-      nivel: nivel,
-      professor: {
-        nome: professor,
-        experiencia: experiencia,
-      },
-      certificado: certificado,
-      descricao: descricao,
-      link: link,
-      curtido: false, // Adicionar a propriedade de curtido ao novo curso
-      novo: true, // Marcar o curso como novo
-    };
-
-    cursos.push(novoCurso);
-    localStorage.setItem("cursos", JSON.stringify(cursos));
-
-    exibirMensagem("Curso adicionado com sucesso!");
-    exibirCursos(cursos); // Atualizar a exibição dos cursos
-    form.reset();
-  });
 });
+
+export default function exibirMensagem(mensagem) {
+  mensagemContainer.innerText = mensagem;
+  mensagemContainer.style.display = "block";
+  // Esconder a mensagem após alguns segundos
+  setTimeout(() => {
+    mensagemContainer.style.display = "none";
+  }, 3000);
+}
