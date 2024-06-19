@@ -1,62 +1,38 @@
-let btn = document.querySelector('.fa-eye')
-
-btn.addEventListener('click', ()=>{
-  let inputSenha = document.querySelector('#senha')
-  
-  if(inputSenha.getAttribute('type') == 'password'){
-    inputSenha.setAttribute('type', 'text')
+document.querySelector('.fa-eye').addEventListener('click', function() {
+  const senhaInput = document.getElementById('senha');
+  if (senhaInput.type === 'password') {
+      senhaInput.type = 'text';
+      this.classList.remove('fa-eye');
+      this.classList.add('fa-eye-slash');
   } else {
-    inputSenha.setAttribute('type', 'password')
+      senhaInput.type = 'password';
+      this.classList.remove('fa-eye-slash');
+      this.classList.add('fa-eye');
   }
-})
+});
 
-function entrar(){
-  let usuario = document.querySelector('#usuario')
-  let userLabel = document.querySelector('#userLabel')
-  
-  let senha = document.querySelector('#senha')
-  let senhaLabel = document.querySelector('#senhaLabel')
-  
-  let msgError = document.querySelector('#msgError')
-  let listaUser = []
-  
-  let userValid = {
-    nome: '',
-    user: '',
-    senha: '',
+function entrar() {
+  const usuario = document.getElementById('usuario').value;
+  const senha = document.getElementById('senha').value;
+
+  const msgError = document.getElementById('msgError');
+
+  const user = JSON.parse(localStorage.getItem('user'));
+
+  if (!user) {
+      msgError.innerHTML = "Usuário não encontrado!";
+      return;
   }
-  
-  listaUser = JSON.parse(localStorage.getItem('usuarios'))
-  
-  listaUser.forEach((item) => {
-    if(usuario.value == item.userCad && senha.value == item.senhaCad){
-       
-      userValid = {
-         nome: item.nomeCad,
-         user: item.userCad,
-         senha: item.senhaCad,
-         id: item.id,
-         dataNascimento:item.dataNascimentoCad,
-         nivel: item.nivelCad,
-         genero: item.generoCad
-       }
-      
-    }
-  })
-   
-  if(usuario.value == userValid.user && senha.value == userValid.senha){
-    window.location.href = '../pages/perfil.html'
- 
-    localStorage.setItem('userLogado', JSON.stringify(userValid))
+
+  if (usuario === user.usuario && senha === user.senha) {
+      localStorage.setItem('loggedInUser', JSON.stringify(user));
+      window.location.href = '../pages/perfil.html';
   } else {
-    userLabel.setAttribute('style', 'color: red')
-    usuario.setAttribute('style', 'border-color: red')
-    senhaLabel.setAttribute('style', 'color: red')
-    senha.setAttribute('style', 'border-color: red')
-    msgError.setAttribute('style', 'display: block')
-    msgError.innerHTML = 'Usuário ou senha incorretos'
-    usuario.focus()
+      msgError.innerHTML = "Usuário ou senha incorretos!";
   }
-  
 }
 
+document.querySelector('button').addEventListener('click', function(event) {
+  event.preventDefault();
+  entrar();
+});
