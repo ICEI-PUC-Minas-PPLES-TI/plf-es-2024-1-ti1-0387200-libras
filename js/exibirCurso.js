@@ -35,8 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
     cursosContainer.innerHTML = "";
     cursos.forEach((curso) => {
       const card = `
-        <div class="col-lg-3 col-sm-5 mb-4 mh-100 curso-item">
-          <div class="card bg-primary bg-gradient border border-black">
+       <div class="col-lg-3 col-sm-5 mb-4 mh-100 curso-item">
+        <div class="d-flex flex-column">
+          <img src="../assets/img/curso-pic.png" class="img-fluid" style="width: 100%; height: 20vh; border-radius: 10px 10px 0 0" />
+          <div class="card bg-primary bg-gradient flex-grow-1 ms-0">
             <div class="d-flex flex-column justify-content-center card-body card-curso">
               <h5 class="card-title text-center fs-4">${curso.titulo}</h5>
               <a href="${curso.link}" class="link-light">Acessar</a>
@@ -53,23 +55,24 @@ document.addEventListener("DOMContentLoaded", () => {
               ${
                 curso.novo
                   ? `<div class="d-flex justify-content-between"> 
-                  <button class="btn btn-light btn-sm like-btn" data-curso-id="${
-                    curso.id
-                  }">
-                    ${curso.curtido ? "Curtido" : "Curtir"}
-                  </button>
-                  <button class="btn btn-danger btn-sm excluir-btn" data-curso-id="${
-                    curso.id
-                  }">
-                    Excluir
-                  </button>
-                </div>
-                `
+                      <button class="btn btn-light btn-sm like-btn" data-curso-id="${
+                        curso.id
+                      }">
+                        ${curso.curtido ? "Curtido" : "Curtir"}
+                      </button>
+                      <button class="btn btn-danger btn-sm excluir-btn" data-curso-id="${
+                        curso.id
+                      }">
+                        Excluir
+                      </button>
+                    </div>
+                  `
                   : ""
               }
             </div>
           </div>
         </div>
+      </div>
       `;
       cursosContainer.innerHTML += card;
     });
@@ -129,5 +132,3 @@ export default function exibirMensagem(mensagem) {
     mensagemContainer.style.display = "none";
   }, 3000);
 }
-
-

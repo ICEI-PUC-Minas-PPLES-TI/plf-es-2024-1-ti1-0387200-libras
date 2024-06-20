@@ -1,4 +1,4 @@
-import exibirMensagem from "./exibirCurso";
+import exibirMensagem from "./exibirCurso.js";
 
 let cursos = JSON.parse(localStorage.getItem("cursos")) || [];
 const form = document.querySelector("#cursoForm");
@@ -41,3 +41,5 @@ form.addEventListener("submit", (event) => {
   form.reset();
   window.location.href = "cursos.html";
 });
+
+
