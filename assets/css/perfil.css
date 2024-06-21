@@ -93,3 +93,42 @@ button:last-child {
 button:hover {
   background-color: #90caf9; 
 }
+
+@media (max-width: 600px) {
+    .logo {
+      display: none; 
+    }
+  
+    .titulo {
+      font-size: 1em; 
+    }
+  
+    .logo-title-container {
+      text-align: center;
+      margin-bottom: 10px; 
+    }
+  
+
+  .card {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons-container button,
+  .sair-container button {
+    width: 100%;
+  }
+
+  .buttons-container {
+    justify-content: center;
+  }
+
+  .sair-container {
+    justify-content: center;
+  }
+}
