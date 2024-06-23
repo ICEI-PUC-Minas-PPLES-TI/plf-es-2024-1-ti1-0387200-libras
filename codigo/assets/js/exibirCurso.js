@@ -29,19 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
         curso.professor.experiencia.toLowerCase().includes(busca) ||
         curso.descricao.toLowerCase().includes(busca)
     );
-    exibirCursos(cursosFiltrados);
+    if (busca === "") {
+      exibirCursos(cursos);
+    } else if (cursosFiltrados.length > 0) {
+      exibirCursos(cursosFiltrados);
+    } else {
+      cursosContainer.innerHTML = ""; 
+      exibirMensagem("Nenhum resultado para o curso pesquisado.");
+    }
   });
   function exibirCursos(cursos) {
     cursosContainer.innerHTML = "";
     cursos.forEach((curso) => {
       const card = `
-       <div class="col-lg-4 col-sm-5 mb-2 mh-100 curso-item">
-        <div class="d-flex flex-column">
-          <img src="/codigo/assets/img/curso-pic.png" class="img-fluid" style="width: 100%; height: 20vh; border-radius: 10px 10px 0 0" />
-          <div class="card bg-primary bg-gradient flex-grow-1 ms-0">
-            <div class="d-flex flex-column justify-content-center card-body card-curso">
+       <div class="curso-item">
+        <div class="card bg-primary bg-gradient flex-grow-1">
+          <img src="/codigo/assets/img/curso-pic.png" style="width: 100%; height: 20vh; border-radius: 10px 10px 0 0" />
+          <div class="d-flex flex-column justify-content-center card-body card-curso">
               <h5 class="card-title text-center fs-4">${curso.titulo}</h5>
-              <a href="${curso.link}" target="_blank" class="link-light">Acessar</a>
+              <a href="${curso.link}" target="_blank" class="link-curso">Acessar</a>
               <p class="card-text">Duração: ${curso.duracao}</p>
               <p class="card-text">Nível: ${curso.nivel}</p>
               <p class="card-text">Professor: ${curso.professor.nome}</p>
@@ -71,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             </div>
           </div>
-        </div>
       </div>
       `;
       cursosContainer.innerHTML += card;

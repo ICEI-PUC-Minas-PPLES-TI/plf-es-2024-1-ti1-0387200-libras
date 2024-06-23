@@ -3,7 +3,7 @@
     "id": 1,
     "titulo": "Curso de Libras Básico",
     "duracao": "6 semanas",
-    "descricao": "Um curso introdutório para aprender o alfabeto e frases básicas com exercícios de comunicação na linguagem de Libras.",
+    "descricao": "Um curso introdutório para aprender o alfabeto e frases básicas com exercícios na linguagem de Libras.",
     "nivel": "Intermediário",
     "professor": {
       "nome": "Ana Silva",
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "titulo": "Curso Avançado",
+    "titulo": "Curso Avançado de Libras",
     "duracao": "12 semanas",
     "descricao": "Aprofunde seus conhecimentos em Libras com expressões mais complexas e conversas do dia a dia.",
     "nivel": "Avançado",
