@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cursos.length > 0) {
     exibirCursos(cursos);
   } else {
-    fetch("/data/course.json")
+    fetch("/codigo/data/course.json")
       .then((response) => response.json())
       .then((data) => {
         cursos = data;
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = `
        <div class="col-lg-4 col-sm-5 mb-2 mh-100 curso-item">
         <div class="d-flex flex-column">
-          <img src="../assets/img/curso-pic.png" class="img-fluid" style="width: 100%; height: 20vh; border-radius: 10px 10px 0 0" />
+          <img src="/codigo/assets/img/curso-pic.png" class="img-fluid" style="width: 100%; height: 20vh; border-radius: 10px 10px 0 0" />
           <div class="card bg-primary bg-gradient flex-grow-1 ms-0">
             <div class="d-flex flex-column justify-content-center card-body card-curso">
               <h5 class="card-title text-center fs-4">${curso.titulo}</h5>
