@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
     cursosContainer.innerHTML = "";
     cursos.forEach((curso) => {
       const card = `
-       <div class="col-lg-3 col-sm-5 mb-4 mh-100 curso-item">
+       <div class="col-lg-4 col-sm-5 mb-2 mh-100 curso-item">
         <div class="d-flex flex-column">
           <img src="../assets/img/curso-pic.png" class="img-fluid" style="width: 100%; height: 20vh; border-radius: 10px 10px 0 0" />
           <div class="card bg-primary bg-gradient flex-grow-1 ms-0">
             <div class="d-flex flex-column justify-content-center card-body card-curso">
               <h5 class="card-title text-center fs-4">${curso.titulo}</h5>
-              <a href="${curso.link}" class="link-light">Acessar</a>
+              <a href="${curso.link}" target="_blank" class="link-light">Acessar</a>
               <p class="card-text">Duração: ${curso.duracao}</p>
               <p class="card-text">Nível: ${curso.nivel}</p>
               <p class="card-text">Professor: ${curso.professor.nome}</p>
