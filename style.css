@@ -28,7 +28,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
    
 }
 /* Estilo para a navegação */
@@ -60,6 +60,44 @@
     border-radius: 10px; /* Bordas arredondadas */
     
 }
+
+/* Estilos para conteudo principal */
+p {
+    margin: 0;
+  }
+  
+  .card img {
+    height: 30vh;
+  }
+  
+  header {
+    background-color: #0d6efd;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+  
+  figure img {
+    object-fit: cover;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    scale: 1.03;
+  }
+  
+  header h1, header p {
+    color: white;
+    font-size: 60px;
+  }
+ 
+  @media (min-width: 1200px) { 
+    header {
+       width: 84%;
+    }
+  }
 
 .nav-links li a:hover {
     background-color: #8c8e99; /* Cor de fundo ao passar o mouse */
