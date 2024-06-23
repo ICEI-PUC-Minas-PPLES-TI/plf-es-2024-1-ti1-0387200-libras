@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil do Usuário - LibraLearn</title>
+  <link rel="stylesheet" href="../assets/css/perfil.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo-title-container">
+        <img src="../assets/images/logo.png" alt="Logo da LibraLearn" class="logo">
+        <h1 class="titulo" id="tituloUsuario">Seja bem-vindo ao seu perfil, <span id="userName"></span></h1>
+      </div>
+      <div id="perfil-info">
+        <div>
+          <strong>Nome Completo:</strong>
+          <p id="nome"></p>
+        </div>
+        <div>
+          <strong>Nome de Usuário:</strong>
+          <p id="usuario"></p>
+        </div>
+        <div>
+          <strong>Data de Nascimento:</strong>
+          <p id="dataNascimento"></p>
+        </div>
+        <div>
+          <strong>Nível de Conhecimento:</strong>
+          <p id="nivel"></p>
+        </div>
+        <div>
+          <strong>Gênero:</strong>
+          <p id="genero"></p>
+        </div>
+        
+        <button onclick="editarUsuario()">Editar Usuário</button>
+        <button onclick="editarNivel()">Editar Nível de Conhecimento</button>
+        <button onclick="sair()">Sair</button>
+
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/perfil.js"></script>
+</body>
+
+</html>
