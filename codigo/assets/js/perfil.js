@@ -43,9 +43,9 @@ function editarNivel() {
   }
 }
 
-function sair() {
+function home() {
     localStorage.removeItem('loggedInUser');
-    window.location.href = '../pages/signin.html';
+    window.location.href = '../index.html';
 }
 
 window.onload = carregarPerfil;

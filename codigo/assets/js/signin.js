@@ -26,7 +26,7 @@ function entrar() {
 
   if (usuario === user.usuario && senha === user.senha) {
       localStorage.setItem('loggedInUser', JSON.stringify(user));
-      window.location.href = '../pages/perfil.html';
+      window.location.href = '../../codigo/index.html';
   } else {
       msgError.innerHTML = "Usuário ou senha incorretos!";
   }
