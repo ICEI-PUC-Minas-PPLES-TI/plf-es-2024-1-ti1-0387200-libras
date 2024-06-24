@@ -33,18 +33,27 @@ function editarUsuario() {
 }
 
 function editarNivel() {
-  const novoNivel = prompt("Digite o novo nível de conhecimento (Iniciante, Intermediário, Avançado):");
-  if (novoNivel) {
-      const user = JSON.parse(localStorage.getItem('loggedInUser'));
-      user.nivel = novoNivel;
-      localStorage.setItem('loggedInUser', JSON.stringify(user));
-      localStorage.setItem('user', JSON.stringify(user));
-      document.getElementById('nivel').innerText = novoNivel;
+  const niveisPermitidos = ["Iniciante", "Intermediário", "Avançado"];
+  const user = JSON.parse(localStorage.getItem('loggedInUser'));
+  const nivelAtual = user.nivel;
+  
+  const novoNivel = prompt(`Digite o novo nível de conhecimento (Iniciante, Intermediário, Avançado). Atual: ${nivelAtual}`);
+  
+  if (novoNivel && niveisPermitidos.includes(novoNivel)) {
+      if (novoNivel === nivelAtual) {
+          alert(`Você já está no nível ${nivelAtual}. Por favor, escolha um nível diferente.`);
+      } else {
+          user.nivel = novoNivel;
+          localStorage.setItem('loggedInUser', JSON.stringify(user));
+          localStorage.setItem('user', JSON.stringify(user));
+          document.getElementById('nivel').innerText = novoNivel;
+      }
+  } else if (novoNivel) {
+      alert("Por favor, insira um nível válido (Iniciante, Intermediário, Avançado).");
   }
 }
 
 function home() {
-    localStorage.removeItem('loggedInUser');
     window.location.href = '../index.html';
 }
 
