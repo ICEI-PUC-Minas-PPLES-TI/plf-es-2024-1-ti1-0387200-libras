@@ -44,4 +44,12 @@ body {
     border-radius: 5px;
     overflow-x: auto;
   }
+
+  .voltar {
+    font-size: 40px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+  }
+
   

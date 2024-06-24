@@ -8,6 +8,13 @@ body {
 	overflow-x: hidden;
 }
 
+.voltar {
+  font-size: 40px;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+
 #cursosContainer {
   display: flex;
   flex-wrap: wrap;
