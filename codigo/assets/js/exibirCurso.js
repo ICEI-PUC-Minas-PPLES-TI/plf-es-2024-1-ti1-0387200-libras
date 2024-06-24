@@ -1,7 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cursosContainer = document.getElementById("cursosContainer");
   const mensagemContainer = document.getElementById("mensagemContainer");
+  // const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
   let cursos = JSON.parse(localStorage.getItem("cursos")) || [];
+
+  // if (loggedInUser) {
+  //   cursos = cursos.filter(curso => curso.autor === loggedInUser.usuario);
+  // }
+
+  document.querySelector(".postar-button").addEventListener("click", (e) => {
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    if (!loggedInUser) {
+      alert('Você precisa estar logado para postar um curso.');
+      e.preventDefault();
+    } 
+  })
 
   // Verificar se já existem cursos armazenados localmente
   if (cursos.length > 0) {

@@ -6,6 +6,8 @@ const form = document.querySelector("#cursoForm");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
   let titulo = document.getElementById("titulo").value;
   let duracao = document.getElementById("duracao").value;
   let nivel = document.getElementById("nivel").value;
@@ -33,6 +35,7 @@ form.addEventListener("submit", (event) => {
     link: link,
     curtido: false, // Adicionar a propriedade de curtido ao novo curso
     novo: true, // Marcar o curso como novo
+    autor: loggedInUser.usuario 
   };
 
   cursos.push(novoCurso);
