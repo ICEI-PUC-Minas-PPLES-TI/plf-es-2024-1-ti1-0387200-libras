@@ -17,7 +17,7 @@ O objetivo deste projeto é desenvolver estratégias eficazes para promover uma 
 
 O sistema inicialmente passa por um processo de autenticação. Após isso, o usuário será encaminhado para a home do site, onde temos uma navegação com possibilidade de acessar páginas de cursos, um tradutor de libras, informações do perfil do usuário e um sobre nós, contando um pouco de nossa relação (desenvolvedores da aplicação) com o site. 
 
-*Na página de cursos, é possível visualizar os cursos divulgados, além de postar um novo curso para os utilizadores do site iniciarem os estudos. 
-*Na página tradutor, seguindo o tutorial da página, é possível traduzir textos para linguagem de libras por meio da API vLibras.
-*Na página perfil, o usuário visualiza suas informações cadastradas. Tem a possibilidade de Editar usuario, Editar nivel de conhecimento, Voltar para home.
-*Na página Sobre nós, é contado quem somos, o que fazemos, o nome dos desenvolvedores, a fim de aproximar um pouco mais do usuário.
+* Na página de cursos, é possível visualizar os cursos divulgados, além de postar um novo curso para os utilizadores do site iniciarem os estudos. 
+* Na página tradutor, seguindo o tutorial da página, é possível traduzir textos para linguagem de libras por meio da API vLibras.
+* Na página perfil, o usuário visualiza suas informações cadastradas. Tem a possibilidade de Editar usuario, Editar nivel de conhecimento, Voltar para home.
+* Na página Sobre nós, é contado quem somos, o que fazemos, o nome dos desenvolvedores, a fim de aproximar um pouco mais do usuário.
