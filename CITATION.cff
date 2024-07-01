@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: LibraLearn
+authors:
+  - family-names: Kodato Teixeira
+    given-names: Caio Victor
+  - family-names: Queiroz Rolim
+    given-names: Pedro 
+  - family-names: Soares de Souza Garcia
+    given-names: Pedro
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: de Farias Barros
+    given-names: Diego Augusto
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: da Costa Silva
+    given-names: Luiz Henrique
+keywords:
+  - Libras
+  - Curso de ensino
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387200-libras
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-06-30
+=======
+
