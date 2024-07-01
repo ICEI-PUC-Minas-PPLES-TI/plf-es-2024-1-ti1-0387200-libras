@@ -42,7 +42,7 @@ form.addEventListener("submit", (event) => {
   localStorage.setItem("cursos", JSON.stringify(cursos));
   exibirMensagem("Curso adicionado com sucesso");
   form.reset();
-  window.location.href = "cursos.html";
+  window.location.href = "pages/cursos.html";
 });
 
 

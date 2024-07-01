@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cursos.length > 0) {
     exibirCursos(cursos);
   } else {
-    fetch("/codigo/data/course.json")
+    fetch("../data/course.json")
       .then((response) => response.json())
       .then((data) => {
         cursos = data;
