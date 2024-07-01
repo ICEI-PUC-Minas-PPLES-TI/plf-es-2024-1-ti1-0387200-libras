@@ -86,3 +86,13 @@ O projeto é realizado por meio da metodologia ágil SCRUM, que organiza o traba
 | Repositório de código    | GitHub                |
 | Gerenciamento do projeto | Discord / Whatsapp    |
 | Templates                | Miro                  |
+
+
+## Solução do problema
+
+    A troca de informações é fundamental para superar essas barreiras e promover a inclusão. Por meio do compartilhamento de conhecimentos e experiências, podemos construir uma sociedade mais consciente e preparada para acolher a diversidade. Nesse contexto, nossa plataforma surge como uma solução inovadora, funcionando como uma rede social dedicada à divulgação de cursos de Libras existentes.
+
+    Nossa missão é conectar pessoas interessadas em aprender Libras com as  opções de cursos disponíveis pelos nossos usuários. Ao permitir que os usuários postem e compartilhem informações sobre diferentes cursos, promovemos uma comunidade ativa e engajada na aprendizagem e ensino da língua de sinais. Acreditamos que através dessa troca constante de informações, todos podem adquirir conhecimentos valiosos, contribuindo para uma maior fluência em Libras e, consequentemente, para uma inclusão mais efetiva das pessoas surdas na sociedade.
+Além de divulgar cursos, nossa plataforma conta um tradutor via API, onde os usuários conseguem introduzir um texto para ser traduzido. O representante passa a tradução para o usuário logo após.
+ 
+   Buscamos trazer uma aplicação acessível, simples, para todas idades conseguirem utilizá-la sem dificuldades. Além disso, utilizamos responsividade para tornar uma opção do usuário qual aparelho irá navegar no nosso app. Apresentaremos aqui, as telas principais:
