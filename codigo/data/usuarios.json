@@ -1,0 +1,28 @@
+[
+    {
+        "dataNascimentoCad":"1998-09-08",
+        "generoCad": "Masculino",
+        "nivelCad": "Iniciante",
+        "nomeCad": "Ruan Gabriel",
+        "senhaCad": "131313",
+        "userCad":"RuanGG"
+    },
+
+    {
+        "dataNascimentoCad":"2004-19-05",
+        "generoCad": "Masculino",
+        "nivelCad": "Iniciante",
+        "nomeCad": "Caio Kodato",
+        "senhaCad": "19052004",
+        "userCad":"CaioKodato"
+    },
+
+    {
+        "dataNascimentoCad": "2003-03-15",
+        "generoCad": "Feminino",
+        "nivelCad": "Intermediário",
+        "nomeCad": "Julia Pedrosa",
+        "senhaCad": "129012",
+        "userCad": "JuliaP"
+    }
+]
